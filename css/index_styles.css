@@ -1,0 +1,971 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --header: #3E2E21;
+    --text: #69504c;
+    --light: #C9A555;
+    --alt: #232F3E;
+    --white: #fefefe;
+    --black: #000000;
+    --bg: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.main .gradient {
+    position: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 3;
+}
+
+.main .main-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main .main-images .images-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main .main-images .images-container .images {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+}
+
+.main .main-images .images-container .images.active {
+    opacity: 1;
+}
+
+.main .main-images .images-container .images img {
+    filter: brightness(0.5);
+    width: 100%;
+    height: auto;
+}
+
+.main .main-images .images-container .alternative img {
+    filter: brightness(0);
+    width: 100%;
+    height: auto;
+}
+
+.main .cosistent {
+    text-align: center;
+}
+
+.main .cosistent h2 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+}
+
+.main .about-us-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg);
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.main .about-us-container .about-us-text {
+    margin: 0 30px;
+}
+
+.main .about-us-container .about-us-text h2 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    color: var(--header);
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
+.main .about-us-container .about-us-text .about-us-paragraf {
+    margin-bottom: 50px;
+}
+
+.main .about-us-container .about-us-text .about-us-paragraf p {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--text);
+    margin: 10px;
+}
+
+.main .about-us-container .about-video-container {
+    background-color: var(--alt);
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+    transition: all 2s ease;
+}
+
+.main .about-us-container .about-video-container .back-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    border-color: var(--white);
+    width: 100%;
+    height: 25%;
+}
+
+.main .about-us-container .about-video-container video {
+    background-color: var(--black);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease;
+    z-index: 3;
+}
+
+.main .residence-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    margin: 0 auto;
+    background-color: var(--alt);
+    width: 80%;
+}
+
+.main .residence-part .object-3 {
+    margin-bottom: 50px;
+}
+
+.main .residence-part .text {
+    margin-top: 50px;
+}
+
+.main .residence-part .text h2 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+.main .residence-part .residence-container {
+    padding: 2% 6%;
+}
+
+.main .residence-part .residence-container .container {
+    border: 1px solid var(--white);
+    padding: 4%;
+}
+
+.main .residence-part .residence-container .container .residence {
+    display: grid;
+    grid-template-columns: 1fr 0.99fr;
+    grid-gap: 2%;
+}
+
+.main .residence-part .object-2 .container .residence {
+    grid-template-columns: 0.95fr 1fr;
+}
+
+.main .residence-part .object-2 .container .residence .first {
+    order: 2;
+}
+
+.main .residence-part .object-2 .container .residence .second {
+    order: 1;
+}
+
+.main .residence-part .residence-container .container .margin {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main .residence-part .residence-container .container .margin .shadow {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 25%;
+}
+
+.main .residence-part .residence-container .container .margin h3 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--white);
+    padding-top: 8%;
+    z-index: 10;
+}
+
+.main .residence-part .residence-container .container .margin .line {
+    position: absolute;
+    z-index: 10;
+    background-color: var(--white);
+    width: 30%;
+    height: 2px;
+    margin-top: 18%;
+}
+
+.main .residence-part .residence-container .container .margin img {
+    transition: all 1s;
+    background-color: var(--black);
+    opacity: 90%;
+    width: 100%;
+} 
+
+.main .residence-part .residence-container .container .margin:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main .residence-part .residence-container .container .text {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.main .residence-part .residence-container .container .text p {
+    font-family: 'Nunito';
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.main .residence-text {
+    text-align: center;
+    margin: 0 30%;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.main .residence-text .head-text {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: var(--header);
+    margin-bottom: 30px;
+}
+
+.main .residence-text .residence-paragraf {
+    margin-bottom: 50px;
+}
+
+.main .residence-text .residence-paragraf p {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--text);
+    margin: 10px;
+}
+
+.main .aditional-section {
+    position: relative;
+    margin: 0 10%;
+    margin-top: 100px;
+}
+
+.main .aditional-section .bg {
+    position: relative;
+    background-image: url('https://juanpagenismx.github.io/sensohouse/assets/Extra/House.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+}
+
+.main .aditional-section .bg .text-box {
+    position: absolute;
+    bottom: -50%;
+    right: 5%;
+    background-color: var(--bg);
+    width: 400px;
+    height: 450px;
+    padding: 5%;
+    transition: transform 0.3s ease;
+}
+
+.main .aditional-section .bg .text-box .line {
+    width: 30%;
+    height: 2px;
+    background-color: var(--alt);
+}
+
+.main .aditional-section .bg .text-box p {
+    margin: auto 0;
+    padding-top: 30px;
+}
+
+.main .aditional-section .bg .text-box .one p {
+    font-family: 'Playfair Display';
+    color: var(--header);
+    font-size: 1.4rem;
+}
+
+.main .aditional-section .bg .text-box .two p {
+    font-size: 1.2rem;
+}
+
+.main .aditional-section .aditional-images {
+    position: relative;
+    justify-content: center;
+    background-color: var(--bg);
+    margin: 10% 0;
+}
+
+.main .aditional-section .aditional-images .images {
+    display: flex;
+    justify-content: space-between;
+    width:  100%;
+    height: 100%;
+}
+
+.main .aditional-section .aditional-images .images .container {
+    position: relative;
+    margin: 0 1%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main .aditional-section .aditional-images .images .container:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main .aditional-section .aditional-images .images .container p {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    padding-top: 10%;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.main .aditional-section .aditional-images .images .container img {
+    filter: brightness(65%);
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.main .aditional-section .aditional-images .images .container .info {
+    position: absolute;
+    padding-bottom: 25px;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main .aditional-section .aditional-images .images .container .separation {
+    background-color: var(--white);
+    margin: 0 auto;
+    width: 25%;
+    height: 2px;
+}
+
+.footer .footer-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--bg);
+    border-top: 1px solid var(--alt);
+}
+
+.footer .footer-section .footer {
+    padding: 25px 0;
+}
+
+.footer .footer-section .footer .info a {
+    font-size: 0.7rem;
+    color: var(--alt);
+    text-decoration: none;
+    padding: 0 5px;
+    transition: all 1s;
+}
+
+.footer .footer-section .footer .info a:hover{
+    transform: scale(1.1);
+    color: var(--black);
+}
+
+.footer .footer-section .footer .info i {
+    font-size: 1rem;
+    color: var(--alt);
+    padding-left: 0 5px;
+    transition: all 1s;
+}
+
+.footer .footer-section .footer .info i:hover {
+    transform: scale(1.05);
+    color: var(--black);
+}
+
+.footer .footer-section .footer .info span {
+    font-size: 0.7rem;
+    color: var(--alt);
+    padding: 0 5px;
+}
+
+.footer .forms-section {
+    position: relative;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.footer .forms-section .container {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer .forms-section .container .functional {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.footer .forms-section .container .functional h2 {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    padding-bottom: 8px;
+    color: var(--alt);
+    font-size: 1rem;
+}
+
+.footer .forms-section .container .functional p {
+    font-size: 0.8rem;
+    color: var(--alt);
+    font-weight: normal;
+}
+
+.footer .forms-section .container .form .data {
+    padding-bottom: 20px;
+}
+
+.footer .forms-section .container .form .data input {
+    width: 245px;
+    border: none;
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--alt);
+}
+
+.footer .forms-section .container .form .data input:focus {
+    outline: none;
+}
+
+.footer .forms-section .container .form .data .name {
+    padding-bottom: 25px;
+}
+
+.footer .forms-section .container .form .data .name input {
+    width: 245px;
+    border: none;
+    border-bottom: 1px solid var(--alt);
+}
+
+.footer .forms-section .container .form .send input {
+    font-family: 'Playfair Display';
+    font-size: 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+    color: var(--alt);
+    padding: 8px 45px;
+    border: 1px solid var(--alt);
+    transition: all 1s;
+}
+
+.footer .forms-section .container .form .send input:hover {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--alt);
+    transform: scale(1.1);
+}
+
+.footer .forms-section .container .form .send a {
+    font-size: 0.8rem;
+    padding: 0 10px;
+    color: var(--alt);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.footer .forms-section .container .form .send a:hover {
+    cursor: pointer;
+    color: var(--header);
+    transform: scale(1.1);
+}
+
+.testimonial-section {
+    background-color: var(--alt);
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.carrousel-section {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.carrousel-section .carrousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carrousel-section .swiper-slide img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.carrousel-section .swiper-button-prev,
+.carrousel-section .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--alt);
+}
+
+.carrousel-section .swiper-button-prev {
+    left: 25%;
+    transform: translateX(-25%);
+}
+
+.carrousel-section .swiper-button-next {
+    right: 25%;
+    transform: translateX(-25%);
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.swiper-slide {
+    padding: 20px 30%;
+    text-align: center;
+}
+
+.swiper-slide .content {
+    padding-top: 25px;
+    text-align: right;
+}
+
+.swiper-slide p, .swiper-slide span {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.swiper-slide span {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding-top: 100px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: -15px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev {
+    left: 5%;
+}
+
+.swiper-button-next {
+    right: 5%;
+}
+
+@media (max-width: 1024px) {
+    .main .main-video .gradient {
+        height: 105px;
+    }
+
+    .main .main-video {
+        margin-top: 0;
+    }
+
+    .main .main-video h2 {
+        font-size: 1.8rem;
+    }
+
+    .main .cosistent h2 {
+        font-size: 1.6rem;
+    }
+
+    .header .separation {
+        margin-top: 105px;
+    }
+
+    .main .about-us-container .about-video-container {
+        padding: 30px;
+        width: 85%;
+    }
+
+    .main .about-us-container .about-video-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main .about-us-container .about-us-text .about-us-paragraf {
+        margin-bottom: 80px;
+    }
+
+    .main .residence-part {
+        width: 100%;
+    }
+    
+    .main .residence-part .text {
+        margin: 25px 0;
+    }
+
+    .main .residence-part .text h2 {
+        font-size: 2rem;
+    }
+    
+    .main .residence-part .residence-container .container {
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .main .residence-part .residence-container .container .residence {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main .residence-part .object-2 .container .residence .first {
+        order: 1;
+    }
+    
+    .main .residence-part .object-2 .container .residence .second {
+        order: 2;
+    }
+    
+    .main .residence-part .residence-container .container .margin h3 {
+        font-size: 1.3rem;
+    }
+    
+    .main .residence-part .residence-container .container .margin .line {
+        margin-top: 19%;
+    }
+    
+    .main .residence-part .residence-container .container .text {
+        margin-top: 5%;
+    }
+
+    .main .residence-part .residence-container .container .text p {
+        font-size: 1rem;
+    }
+
+    .main .aditional-section {
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .main .aditional-section .bg {
+        height: 600px;
+        background-size: cover;
+    }
+
+    .main .aditional-section .bg .text-box {
+        width: 250px;
+        height: 300px;
+        padding: 3%;
+    }
+
+    .main .aditional-section .bg .text-box .one p {
+        font-size: 1.1rem;
+    }
+    
+    .main .aditional-section .bg .text-box .two p {
+        font-size: 0.9rem;
+    }
+    
+    .main .aditional-section .bg .text-box p {
+        padding-top: 20px;
+    }
+
+    .main .aditional-section .bg .text-box {
+        bottom: -50%;
+    }
+
+    .main .aditional-section .aditional-images {
+        margin-top: 80px;
+        padding: 0 5%;
+    }
+
+    .main .aditional-section .aditional-images .images {
+        flex-direction: column;
+    }
+
+    .main .aditional-section .aditional-images .images .container {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 95%;
+        height: 95%;
+    }
+
+    .main .aditional-section .aditional-images .images .container p {
+        padding-top: 15%;
+    }
+
+    .testimonial-section h2 {
+        padding-top: 35px;
+        font-size: 1.3rem;
+    }
+    
+    .swiper-slide {
+        padding: 20px 15%;
+        text-align: center;
+    }
+    
+    .swiper-slide p, .swiper-slide span {
+        color: var(--white);
+        font-size: 0.7rem;
+    }
+    
+    .swiper-slide span {
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-size: 0.8rem;
+        padding-top: 100px;
+    }
+
+    .carrousel-section .swiper-button-prev {
+        left: 8%;
+        transform: translateX(-8%);
+    }
+    
+    .carrousel-section .swiper-button-next {
+        right: 8%;
+        transform: translateX(-8%);
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        overflow: hidden;
+    }
+
+    .main .main-images {
+        margin-top: 100px;
+    }
+
+    .main .cosistent h2 {
+        font-size: 1.2rem;
+    }
+
+    .main .about-us-container {
+        margin: 90px 0 0 0;
+    }
+
+    .main .about-us-container .about-us-text .head-text-about {
+        font-size: 1rem;
+    }
+
+    .main .about-us-container .about-us-text h2 {
+        font-size: 1rem;
+    }
+
+    .main .about-us-container .about-us-text .about-us-paragraf p {
+        font-size: 0.8rem;
+    }
+
+    .main .residence-text {
+        margin: 0 5%;
+    }
+
+    .main .residence-text .head-text {
+        font-size: 1rem;
+    }
+    
+    .main .residence-text .residence-paragraf p {
+        font-size: 0.6rem;
+    }
+
+    .main .aditional-section .bg .text-box {
+        padding: 6%;
+    }
+
+    .main .aditional-section .aditional-images .images .container p {
+        font-size: 0.8rem;
+    }
+
+    .footer .footer-section .footer {
+        padding: 8%;
+    }
+    
+    .footer .footer-section .footer .info i {
+        font-size: 0.8rem;
+    }
+
+    .footer .footer-section .footer .info a {
+        font-size: 0.5rem;
+        padding: 0 2px;
+    }
+
+    
+    .footer .footer-section .footer .info span {
+        font-size: 0.5rem;
+    }
+
+    .footer .forms-section {
+        position: relative;
+        justify-content: center;
+        padding-bottom: 50px;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    
+    .footer .forms-section .container {
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .footer .forms-section .container .functional {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+    
+    .footer .forms-section .container .functional h2 {
+        font-family: 'Playfair Display';
+        font-weight: bold;
+        padding-bottom: 8px;
+        color: var(--alt);
+        font-size: 0.8rem;
+    }
+    
+    .footer .forms-section .container .functional p {
+        font-size: 0.6rem;
+    }
+    
+    .footer .forms-section .container .form .data {
+        padding-bottom: 20px;
+    }
+    
+    .footer .forms-section .container .form .data input {
+        width: 135px;
+        font-size: 0.7rem;
+    }
+    
+    .footer .forms-section .container .form .data .name {
+        padding-bottom: 15px;
+    }
+    
+    .footer .forms-section .container .form .data .name input {
+        width: 135px;
+    }
+    
+    .footer .forms-section .container .form .send input {
+        font-size: 0.8rem;
+        padding: 5px 30px;
+    }
+    
+    .footer .forms-section .container .form .send a {
+        font-size: 0.6rem;
+    }
+
+    .carrousel-section .swiper-button-prev {
+        left: 5%;
+        transform: translateX(-5%);
+    }
+    
+    .carrousel-section .swiper-button-next {
+        right: 5%;
+        transform: translateX(-5%);
+    }
+    
+}
+
+.footer .footer-section .footer .info i {
+    display: none;
+}
+
+.main p {
+    font-family: 'Nunito', sans-serif;
+}

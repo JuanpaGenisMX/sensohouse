@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --header: #3E2E21;
+    --text: #69504c;
+    --light: #C9A555;
+    --alt: #232F3E;
+    --white: #fefefe;
+    --black: #000000;
+    --bg: #FFFFFF;
+}
+
+.header .nav-bar {
+    background-color: var(--alt);
+}
+
+.main {
+    padding-top: 225px;
+    padding-bottom: 50px;
+}
+.main .policy-section .policy {
+    padding: 0 20%;
+    text-align: justify;
+}
+
+.main .policy-section .policy h2 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: var(--alt);
+    font-size: 2rem;
+}
+
+.main .policy-section .policy p {
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.main .policy-section .policy strong {
+    font-size: 1.6rem;
+    color: var(--header);
+}
+
+.main .policy-section .policy li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.main .policy-section .policy li ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.main .policy-section .policy li strong {
+    font-size: 1.1rem;
+}
+
+.main .policy-section .policy a {
+    color: var(--alt);
+    font-size: 1rem;
+}
+
+.main .policy-section .policy h5 {
+    font-size: 1.4rem;
+    color: var(--header);
+}
+
+.main .policy-section .policy h6 {
+    font-size: 1.2rem;
+    color: var(--header);
+}
+
+.main .policy-section .policy .separation {
+    background-color: var(--alt);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 60%;
+    height: 2px;
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding-top: 180px;
+    }
+
+    .main .policy-section .policy {
+        padding: 0 10%;
+    }
+
+    .main .policy-section .policy h2 {
+        font-size: 1.8rem;
+    }
+
+    .main .policy-section .policy p {
+        font-size: 0.8rem;
+    }
+
+    .main .policy-section .policy strong {
+        font-size: 1.4rem;
+    }
+
+    .main .policy-section .policy h5 {
+        font-size: 1.2rem;
+    }
+
+    .main .policy-section .policy h6 {
+        font-size: 0.8rem;
+    }
+
+    .main .policy-section .policy li strong {
+        font-size: 0.9rem;
+    }
+
+    .main .policy-section .policy a {
+        font-size: 0.8rem;
+    }
+}

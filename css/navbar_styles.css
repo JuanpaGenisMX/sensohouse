@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --header: #3E2E21;
+    --text: #69504c;
+    --light: #C9A555;
+    --alt: #232F3E;
+    --white: #fefefe;
+    --black: #000000;
+    --bg: #FFFFFF;
+}
+
+
+.header {
+    position: absolute;
+}
+
+.header .separation {
+    background-color: transparent;
+    position: fixed;
+    margin-top: 150px;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 1px;
+    z-index: 10;
+    transition: all 2s ease;
+}
+
+.header .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 55px;
+    margin: 0;
+    color: var(--white);
+    background-image: none;
+    transition: all 2s ease;
+}
+
+.header .menu-container {
+    justify-content: space-between;
+    display: flex;
+}
+
+.header .menu-container .bars {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-right: 3px;
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 0;
+    background: transparent;
+    transition: all 0.1s ease;
+    gap: 5px;
+}
+
+.header .menu-container .bars > div {
+    background: var(--bg);
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform-origin: left;
+}
+
+.header .menu-container .menu-text {
+    font-family: 'Playfair Display';
+    padding-left: 4px;
+    margin-left: 4px;
+    color: var(--white);
+    font-size: 1.4rem;
+    transition: all 0.5s;
+}
+
+.header .menu-container .menu {
+    justify-content: space-between;
+    display: flex;
+    transition: all 1s;
+}
+
+.header .menu-container .menu:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.header .menu-container .menu button {
+    border: none;
+    display: flex;
+    background-color: transparent;
+    transition: all 1s;
+}
+
+.header .menu-container .menu .fix {
+    color: transparent;
+}
+
+.header .menu-container .menu button:hover {
+    cursor: pointer;
+}
+
+.header .menu-container .fixed {
+    visibility: hidden;
+    cursor: auto;
+    font-size: 0.8rem;
+    padding-left: 15px;
+}
+
+.header .nav-bar .logo img {
+    height: 145px;
+    transition: all 2s;
+}
+
+.header .nav-bar .logo img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.header .nav-bar .contact .btn {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 12px;
+    color: var(--white);
+    border-color: var(--white);
+    background-color: transparent;
+    transition: all 1s;
+}
+
+.header .nav-bar .contact .btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: var(--alt);
+    background-color: var(--bg);
+}
+
+.header .nav-bar .contact .phone {
+    color: var(--white);
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding-right: 20px;
+    transition: all 1s;
+}
+
+.header .nav-bar .contact .phone:hover {
+    color: var(--light);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.header .side-menu {
+    position: fixed;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    background-color: transparent;
+    transition: all 2s ease;
+    z-index: 4;
+}
+
+.header .side-menu .side-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+    height: 95vh;
+    transition: all 2s ease;
+}
+
+.header .side-menu .side-container ul {
+    column-count: 3;
+    column-gap: 0;
+}
+
+.header .side-menu .side-container li {
+    display: inline-block;
+    padding-bottom: 50px;
+    width: 100%;
+    transition: all 1s;
+}
+
+.header .side-menu .side-container button {
+    background-color: transparent;
+    border: 1.5px solid var(--white);
+    border-radius: 3px;
+    width: 300px;
+    height: 100px;
+    transition: all 2s;
+}
+
+.header .side-menu .side-container button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: var(--alt);
+    background-color: var(--white);
+}
+
+.header .side-menu .side-container button:hover > a {
+    font-size: 1.6rem;
+    color: var(--alt);
+}
+
+.header .side-menu .side-container a {
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 20px 0;
+    color: var(--white);
+    transition: all 1s;
+}
+
+.header .fix-slide-menu {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 150px;
+    z-index: 6;
+    transition: all 2s ease;
+}
+
+.header .side-footer {
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-left: -1%;
+    transition: all 2s ease;
+}
+
+.header .side-footer .info {
+    padding: 0 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.header .side-footer .info p {
+    color: var(--white);
+    padding-bottom: 10px;
+}
+
+.header .side-footer .info a {
+    padding: 0 4px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.6rem;
+    transition: all 0.5s;
+}
+
+.header .side-footer .info span {
+    color: var(--white);
+    font-size: 0.6rem;
+    transition: all 0.5s;
+}
+
+.header .side-footer .info a:hover {
+    cursor: pointer;
+    color: var(--light);
+    transform: scale(1.1);
+}
+
+.header .side-footer .info a i {
+    color: var(--white);
+    transition: all 1s;
+}
+
+.header .side-footer .info a i:hover {
+    transform: scale(1.1);
+    color: var(--light);
+}
+
+.header .side-menu .side-footer-separation {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: -100%;
+    background-color: transparent;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 80px;
+    transition: all 2s ease;
+}
+
+.header .side-menu .fix-side-footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: -100%;
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    transition: all 2s ease;
+}
+
+#navbar.scroll {
+    background-color: var(--alt);
+}
+
+#navbar.scroll .logo img {
+    height: 110px;
+}
+
+#side.scroll .side-container {
+    height: 90vh;
+    padding-top: 100px;
+}
+
+#fix.scroll {
+    height: 125px;
+}
+
+#sep.scroll {
+    margin-top: 125px;
+}
+
+@media (max-width: 1020px) {
+    .header {
+        justify-content: center;
+    }
+
+    .header .nav-bar .menu-container {
+        font-size: 1rem;
+    }
+
+    .header .nav-bar .logo img {
+        height: 100px;
+    }
+
+    .header .nav-bar .contact {
+        display: none;
+    }
+
+    .header .side-menu .side-container {
+        margin-top: 0;
+    }
+
+    .header .side-menu .side-container ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .side-menu .side-container ul li {
+        justify-content: space-between;
+        margin-bottom: -100px;
+    }
+
+    .header .side-menu .side-container button {
+        border: 0 solid transparent;
+        width: 250px;
+        height: 190px;
+        overflow: hidden;
+    }
+
+    .header .fix-slide-menu {
+        height: 105px;
+    }
+
+    .header .side-footer {
+        margin-left: 0;
+    }
+
+    .header .side-menu .side-container button:hover {
+        transform: scale(1.05);
+        background-color: transparent;
+    }
+    
+    .header .side-menu .side-container button:hover > a {
+        font-size: 1.6rem;
+        color: var(--white);
+    }
+
+    #navbar.scroll .logo img {
+        height: 100px;
+    }
+
+    #fix.scroll {
+        height: 105px;
+    }
+    
+    #sep.scroll {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header .nav-bar {
+        background-color: var(--alt);
+    }
+
+    .header .side-menu .side-container ul li {
+        margin-bottom: -150px;
+    }
+
+    .header .side-menu .side-container {
+        margin-top: 25px;
+    }
+
+    .header .menu-container .menu-text {
+        display: none;
+    }
+
+    .header .side-footer .info p {
+        font-size: 0.6rem;
+    }
+
+    .header .side-footer .info a {
+        font-size: 0.4rem;
+    }
+
+    .header .side-footer .info span {
+        font-size: 0.4rem;
+    }
+}
+
+.header .side-footer .info a i {
+    display: none;
+}

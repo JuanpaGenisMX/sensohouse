@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --header: #3E2E21;
+    --text: #69504c;
+    --light: #C9A555;
+    --alt: #232F3E;
+    --white: #fefefe;
+    --black: #000000;
+    --bg: #FFFFFF;
+}
+
+.header .nav-bar {
+    background-color: var(--alt);
+}
+
+.main {
+    padding-top: 225px;
+    padding-bottom: 50px;
+}
+
+.main .credits-section {
+    padding: 0 10%;
+    transition: all 2s ease;
+}
+
+.main .credits-section .credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--alt);
+    align-items: center;
+    text-align: center;
+}
+
+.main .credits-section .credits .separation {
+    background-color: var(--white);
+    width: 85%;
+    height: 2px;
+}
+
+.main .credits-section .credits h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+    padding: 30px 0;
+    color: var(--white);
+}
+
+.main .credits-section .credits .info {
+    padding: 30px 0;
+}
+
+.main .credits-section .credits .info .site {
+    padding-bottom: 50px;
+}
+
+.main .credits-section .credits .info h3 {
+    color: var(--white);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.main .credits-section .credits .info a {
+    color: var(--bg);
+    text-decoration: underline;
+}
+
+.main .credits-section .credits .info a:hover {
+    transform: scale(1.1);
+    color: var(--light);
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding-top: 180px;
+    }
+
+    .main .credits-section .credits h2 {
+        font-size: 1.2rem;
+    }
+
+    .main .credits-section .credits .info h3 {
+        font-size: 1rem;
+    }
+
+    .main .credits-section .credits .info a {
+        font-size: 0.8rem;
+    }
+}
